@@ -1,7 +1,7 @@
-# Self-Attention Recovery for QAT(SARQ) Implementation
-This Repository contains SARQ code for **Self-Attention Map is All You Need for QAT of Finetuned Transformers**
+# Teacher Intervention : Improving Convergence of Quantization Aware Training for Ultra-Low Precision Transformers
+This Repository contains code for **Teacher Intervention : Improving Convergence of Quantization Aware Training for Ultra-Low Precision Transformers** (EACL 2023 Main Track)
 
-<img width="867" alt="스크린샷 2022-02-07 오후 2 03 19" src="https://user-images.githubusercontent.com/54992207/152727350-4553fc95-efc8-43dc-beff-9ad74898e421.png">
+![스크린샷 2023-02-03 오후 10 40 10](https://user-images.githubusercontent.com/54992207/216617465-8cf82195-32d2-487f-a5d6-6e577e1ad396.png)
 
 ## Environments
 ```
