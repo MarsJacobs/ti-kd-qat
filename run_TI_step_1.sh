@@ -28,9 +28,9 @@ output_distill=1
 # Teacher Intervention (TI)
 teacher_attnmap=0
 teacher_context=0
-teacher_output=1
+teacher_output=0
 # TI-G options 
-teacher_gradual=0
+teacher_gradual=1
 teacher_stochastic=0
 teacher_inverted=0
 
