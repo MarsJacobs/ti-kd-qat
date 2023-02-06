@@ -77,5 +77,7 @@ For Data Augmentation (DA) Option, use TinyBERT Data Augmentation for getting ex
 
 https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/TinyBERT
 
-
+## Reference
+This Pytorch implementation is based on "TernaryBERT: Distillation-aware Ultra-low Bit BERT, Zhang et al, EMNLP 2020"  
+[Git link](https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/TernaryBERT)
 
