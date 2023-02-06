@@ -78,7 +78,9 @@ https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/TinyBERT
 
 ## Reference
 - This Pytorch implementation is based on "TernaryBERT: Distillation-aware Ultra-low Bit BERT, Zhang et al, EMNLP 2020"  [Git](https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/TernaryBERT)
-- For further information about hessian analysis or loss landscape visualization, refer "How Do Vit Work?, Park et al, ICLR 2022" [Git](https://github.com/xxxnell/how-do-vits-work) or "Understanding and Improving KD for QAT of Large Transformer Encoders, Kim et al, EMNLP 2022" [Git](https://github.com/MarsJacobs/kd-qat-large-enc)
+- For further information about hessian analysis or loss landscape visualization, please refer 
+   - "How Do Vit Work?, Park et al, ICLR 2022" [Git](https://github.com/xxxnell/how-do-vits-work)
+   - "Understanding and Improving KD for QAT of Large Transformer Encoders, Kim et al, EMNLP 2022" [Git](https://github.com/MarsJacobs/kd-qat-large-enc)
 
 For further question, contact me anytime (minsoo2333@hanyang.ac.kr) or kindly leave questions in issues tab.
 
