@@ -51,6 +51,7 @@ You can easily run TI two step Training pipeline using bash scripts.
 - In step-1, Turn-on TI options you want to try in the bash scripts. (e.g., for TI-G, set teacher_gradual=1)
 - In step-2, Set `step1_option` argument same as step-1 training option. (e.g., for TI-G in step-1, step1_option=GRAD)
 ```
+# In run_TI_step_1.sh bash script
 # Teacher Intervention (TI)
 teacher_attnmap=0 # MI
 teacher_context=0 # CI
@@ -64,7 +65,7 @@ teacher_inverted=0 # INVERTED
 # For step2
 step1_option=GRAD # {MI, CI, OI, GRAD, INVERTED, STOCHASTIC}
 ```
-Run two-step TI QAT for BERT base!
+Run two-step TI QAT for fine-tuned BERT-base model!
 ```
 # For TI-QAT Step-1 Training 
 bash run_TI_step_1.sh {GPU Num} {GLUE Task} 
@@ -78,6 +79,6 @@ For Data Augmentation (DA) Option, use TinyBERT Data Augmentation for getting ex
 https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/TinyBERT
 
 ## Reference
-This Pytorch implementation is based on "TernaryBERT: Distillation-aware Ultra-low Bit BERT, Zhang et al, EMNLP 2020"  
-[Git link](https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/TernaryBERT)
+- This Pytorch implementation is based on "TernaryBERT: Distillation-aware Ultra-low Bit BERT, Zhang et al, EMNLP 2020"  [Git link](https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/TernaryBERT)
+- For further information about hessian analysis or loss landscape visualization, refer "How Do Vit Work?, Park et al, ICLR 2022" [git link](https://github.com/xxxnell/how-do-vits-work) or "Understanding and Improving KD for QAT of Large Transformer Encoders, Kim et al, EMNLP 2022" [git link](https://github.com/MarsJacobs/kd-qat-large-enc)
 
