@@ -39,31 +39,39 @@ Download GLUE.
 https://github.com/nyu-mll/GLUE-baselines
 
 ## Teacher Intervention Two-Step QAT
+
+### Setting QAT arguments
 The proposed TI method consists of Two Steps. (See Table-1 for detailed Two-Step TI QAT)
 
 1. Teacher Intervention is employed to finetune quantized weights of either FFN or SA-PROP sub-layers of Transformers. (Convergence in this step is very quick, as shown in Fig.3(c))
 2. Quantization is applied to the entire weights of Transformer layers for QAT
 
-You can easily run the TI two-step Training pipeline using bash scripts.
+You can easily run TI two-step QAT pipeline using two bash scripts.
 
 - In step-1, Turn-on TI options you want to try in the bash scripts. (e.g., for TI-G, set teacher_gradual=1)
-- In step-2, Set `step1_option` argument same as step-1 training option. (e.g., for TI-G in step-1, step1_option=GRAD)
+- In step-2, Set `step1_option` argument same as step-1 training option. (e.g., for TI-G, step1_option=GRAD)
+
+For QAT-step1
+Set these args as follows in run_TI_step_1.sh bash script
 ```
-# In run_TI_step_1.sh bash script
-# Teacher Intervention (TI)
+# Single TI options (Experimental)
 teacher_attnmap=0 # MI
 teacher_context=0 # CI
 teacher_output=0 # OI
 
-# TI-G options 
+# TI-G (Gradual Teacher Intervention) options 
 teacher_gradual=1 # GRAD
 teacher_stochastic=0 # STOCHASTIC
 teacher_inverted=0 # INVERTED
-
-# For step2
+```
+For QAT-step2
+Set this arg as follows in run_TI_step_2.sh bash script.
+```
 step1_option=GRAD # {MI, CI, OI, GRAD, INVERTED, STOCHASTIC}
 ```
-Run two-step TI QAT for fine-tuned BERT-base model!
+Then you are ready to run Teacher Itervetion Two-Step QAT!
+
+### Running TI Two-Step QAT
 ```
 # For TI-QAT Step-1 Training 
 bash run_TI_step_1.sh {GPU Num} {GLUE Task} 
