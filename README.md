@@ -1,5 +1,5 @@
 # Teacher Intervention: Improving Convergence of Quantization Aware Training for Ultra-Low Precision Transformers
-This Repository provides a Pytorch implementation of **Teacher Intervention: Improving Convergence of Quantization Aware Training for Ultra-Low Precision Transformers** (EACL 2023 Main Track)
+This Repository provides a Pytorch implementation of **Teacher Intervention: Improving Convergence of Quantization Aware Training for Ultra-Low Precision Transformers** (EACL 2023 Main Track) [Paper](https://arxiv.org/abs/2302.11812v1)
 
 - This work proposes a proactive knowledge distillation method (Figure 3-(b)) called ***Teacher Intervention*** (TI) for fast converging QAT (Figure 3-c) of ultra-low precision pre-trained Transformers. 
 
