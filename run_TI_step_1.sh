@@ -35,7 +35,7 @@ teacher_stochastic=0
 teacher_inverted=0
 
 # Training Type (downstream, qat_normal, qat_step1, qat_step2)
-training_type=qat_normal
+training_type=qat_step1
 
 # DA Options
 aug_train=0
